@@ -1,0 +1,259 @@
+* Processing True Lines
+** Processing line: ~*** ~char~~
+- Header detected.
+*** True Line Result
+
+*** True Line Result
+*** ~char~
+** Processing line: ~Method is available under ~inputs.key_down~, ~inputs.key_held~, and ~inputs.key_up~.  Take note that~
+** Processing line: ~~
+- End of paragraph detected.
+*** True Line Result
+Method is available under ~inputs.key_down~, ~inputs.key_held~, and ~inputs.key_up~.  Take note that
+** Processing line: ~~args.inputs.keyboard.key_held.char~ will only return the ascii value~
+** Processing line: ~of the last key that was held. Use ~args.inputs.keyboard.key_held.truthy_keys~~
+** Processing line: ~to get an ~Array~ of ~Symbols~ representing all keys being held.~
+** Processing line: ~~
+- End of paragraph detected.
+*** True Line Result
+~args.inputs.keyboard.key_held.char~ will only return the ascii value of the last key that was held. Use ~args.inputs.keyboard.key_held.truthy_keys~ to get an ~Array~ of ~Symbols~ representing all keys being held.
+** Processing line: ~To get a picture of all key states ~args.inputs.keyboard.keys~ returns a ~Hash~~
+** Processing line: ~with the following keys: ~:down~, ~:held~, ~:down_or_held~, ~:up~.~
+** Processing line: ~~
+- End of paragraph detected.
+*** True Line Result
+To get a picture of all key states ~args.inputs.keyboard.keys~ returns a ~Hash~ with the following keys: ~:down~, ~:held~, ~:down_or_held~, ~:up~.
+** Processing line: ~NOTE: ~args.inputs.keyboard.key_down.char~ will be set in line with key repeat behavior of your OS.~
+** Processing line: ~~
+- End of paragraph detected.
+*** True Line Result
+NOTE: ~args.inputs.keyboard.key_down.char~ will be set in line with key repeat behavior of your OS.
+** Processing line: ~This is a demonstration of the behavior (see ~./samples/02_input_basics/01_keyboard~ for a more detailed example):~
+** Processing line: ~~
+- End of paragraph detected.
+*** True Line Result
+This is a demonstration of the behavior (see ~./samples/02_input_basics/01_keyboard~ for a more detailed example):
+** Processing line: ~#+begin_src~
+- Line was identified as the beginning of a code block.
+*** True Line Result
+
+*** True Line Result
+#+begin_src
+** Processing line: ~  def tick args~
+- Inside source: true
+*** True Line Result
+  def tick args
+** Processing line: ~    keyboard = args.inputs.keyboard~
+- Inside source: true
+*** True Line Result
+    keyboard = args.inputs.keyboard
+** Processing line: ~~
+- Inside source: true
+*** True Line Result
+
+** Processing line: ~    args.outputs.labels << { x: 30,~
+- Inside source: true
+*** True Line Result
+    args.outputs.labels << { x: 30,
+** Processing line: ~                             y: 720,~
+- Inside source: true
+*** True Line Result
+                             y: 720,
+** Processing line: ~                             text: "use the J key to test" }~
+- Inside source: true
+*** True Line Result
+                             text: "use the J key to test" }
+** Processing line: ~~
+- Inside source: true
+*** True Line Result
+
+** Processing line: ~    args.outputs.labels << { x: 30,~
+- Inside source: true
+*** True Line Result
+    args.outputs.labels << { x: 30,
+** Processing line: ~                             y: 720 - 30,~
+- Inside source: true
+*** True Line Result
+                             y: 720 - 30,
+** Processing line: ~                             text: "key_down.char: #{keyboard.key_down.char.inspect}" }~
+- Inside source: true
+*** True Line Result
+                             text: "key_down.char: #{keyboard.key_down.char.inspect}" }
+** Processing line: ~~
+- Inside source: true
+*** True Line Result
+
+** Processing line: ~    args.outputs.labels << { x: 30,~
+- Inside source: true
+*** True Line Result
+    args.outputs.labels << { x: 30,
+** Processing line: ~                             y: 720 - 60,~
+- Inside source: true
+*** True Line Result
+                             y: 720 - 60,
+** Processing line: ~                             text: "key_down.j:    #{keyboard.key_down.j}" }~
+- Inside source: true
+*** True Line Result
+                             text: "key_down.j:    #{keyboard.key_down.j}" }
+** Processing line: ~~
+- Inside source: true
+*** True Line Result
+
+** Processing line: ~    args.outputs.labels << { x: 30,~
+- Inside source: true
+*** True Line Result
+    args.outputs.labels << { x: 30,
+** Processing line: ~                             y: 720 - 30,~
+- Inside source: true
+*** True Line Result
+                             y: 720 - 30,
+** Processing line: ~                             text: "key_held.char: #{keyboard.key_held.char.inspect}" }~
+- Inside source: true
+*** True Line Result
+                             text: "key_held.char: #{keyboard.key_held.char.inspect}" }
+** Processing line: ~~
+- Inside source: true
+*** True Line Result
+
+** Processing line: ~    args.outputs.labels << { x: 30,~
+- Inside source: true
+*** True Line Result
+    args.outputs.labels << { x: 30,
+** Processing line: ~                             y: 720 - 60,~
+- Inside source: true
+*** True Line Result
+                             y: 720 - 60,
+** Processing line: ~                             text: "key_held.j:    #{keyboard.key_held.j}" }~
+- Inside source: true
+*** True Line Result
+                             text: "key_held.j:    #{keyboard.key_held.j}" }
+** Processing line: ~~
+- Inside source: true
+*** True Line Result
+
+** Processing line: ~    args.outputs.labels << { x: 30,~
+- Inside source: true
+*** True Line Result
+    args.outputs.labels << { x: 30,
+** Processing line: ~                             y: 720 - 30,~
+- Inside source: true
+*** True Line Result
+                             y: 720 - 30,
+** Processing line: ~                             text: "key_up.char:   #{keyboard.key_up.char.inspect}" }~
+- Inside source: true
+*** True Line Result
+                             text: "key_up.char:   #{keyboard.key_up.char.inspect}" }
+** Processing line: ~~
+- Inside source: true
+*** True Line Result
+
+** Processing line: ~    args.outputs.labels << { x: 30,~
+- Inside source: true
+*** True Line Result
+    args.outputs.labels << { x: 30,
+** Processing line: ~                             y: 720 - 60,~
+- Inside source: true
+*** True Line Result
+                             y: 720 - 60,
+** Processing line: ~                             text: "key_up.j:      #{keyboard.key_up.j}" }~
+- Inside source: true
+*** True Line Result
+                             text: "key_up.j:      #{keyboard.key_up.j}" }
+** Processing line: ~  end~
+- Inside source: true
+*** True Line Result
+  end
+** Processing line: ~#end_src~
+- Inside source: true
+*** True Line Result
+#end_src
+* Processing Html Given True Lines
+** Processing line: ~*** ~char~~
+- H3 detected.
+- Determining if line is a header.
+- Line contains ~*** ~... gsub-ing empty string
+- Formatting line: ~~char~~
+- Line's tilde count is: 2
+- Line contains link marker: false
+- CODE detected.
+- Determining if line is a header.
+- Line contains ~*** ~... gsub-ing empty string
+- Formatting line: ~~char~~
+- Line's tilde count is: 2
+- Line contains link marker: false
+- CODE detected.
+** Processing line: ~Method is available under ~inputs.key_down~, ~inputs.key_held~, and ~inputs.key_up~.  Take note that~
+- P detected.
+- Determining if line is a header.
+- Line does not appear to be a header.
+- Formatting line: ~Method is available under ~inputs.key_down~, ~inputs.key_held~, and ~inputs.key_up~.  Take note that~
+- Line's tilde count is: 6
+- Line contains link marker: false
+- CODE detected.
+** Processing line: ~~args.inputs.keyboard.key_held.char~ will only return the ascii value of the last key that was held. Use ~args.inputs.keyboard.key_held.truthy_keys~ to get an ~Array~ of ~Symbols~ representing all keys being held.~
+- P detected.
+- Determining if line is a header.
+- Line does not appear to be a header.
+- Formatting line: ~~args.inputs.keyboard.key_held.char~ will only return the ascii value of the last key that was held. Use ~args.inputs.keyboard.key_held.truthy_keys~ to get an ~Array~ of ~Symbols~ representing all keys being held.~
+- Line's tilde count is: 8
+- Line contains link marker: false
+- CODE detected.
+** Processing line: ~To get a picture of all key states ~args.inputs.keyboard.keys~ returns a ~Hash~ with the following keys: ~:down~, ~:held~, ~:down_or_held~, ~:up~.~
+- P detected.
+- Determining if line is a header.
+- Line does not appear to be a header.
+- Formatting line: ~To get a picture of all key states ~args.inputs.keyboard.keys~ returns a ~Hash~ with the following keys: ~:down~, ~:held~, ~:down_or_held~, ~:up~.~
+- Line's tilde count is: 12
+- Line contains link marker: false
+- CODE detected.
+** Processing line: ~NOTE: ~args.inputs.keyboard.key_down.char~ will be set in line with key repeat behavior of your OS.~
+- P detected.
+- Determining if line is a header.
+- Line does not appear to be a header.
+- Formatting line: ~NOTE: ~args.inputs.keyboard.key_down.char~ will be set in line with key repeat behavior of your OS.~
+- Line's tilde count is: 2
+- Line contains link marker: false
+- CODE detected.
+** Processing line: ~This is a demonstration of the behavior (see ~./samples/02_input_basics/01_keyboard~ for a more detailed example):~
+- P detected.
+- Determining if line is a header.
+- Line does not appear to be a header.
+- Formatting line: ~This is a demonstration of the behavior (see ~./samples/02_input_basics/01_keyboard~ for a more detailed example):~
+- Line's tilde count is: 2
+- Line contains link marker: false
+- CODE detected.
+** Processing line: ~~
+** Processing line: ~#+begin_src~
+- PRE start detected.
+** Processing line: ~  def tick args~
+** Processing line: ~    keyboard = args.inputs.keyboard~
+** Processing line: ~~
+** Processing line: ~    args.outputs.labels << { x: 30,~
+** Processing line: ~                             y: 720,~
+** Processing line: ~                             text: "use the J key to test" }~
+** Processing line: ~~
+** Processing line: ~    args.outputs.labels << { x: 30,~
+** Processing line: ~                             y: 720 - 30,~
+** Processing line: ~                             text: "key_down.char: #{keyboard.key_down.char.inspect}" }~
+** Processing line: ~~
+** Processing line: ~    args.outputs.labels << { x: 30,~
+** Processing line: ~                             y: 720 - 60,~
+** Processing line: ~                             text: "key_down.j:    #{keyboard.key_down.j}" }~
+** Processing line: ~~
+** Processing line: ~    args.outputs.labels << { x: 30,~
+** Processing line: ~                             y: 720 - 30,~
+** Processing line: ~                             text: "key_held.char: #{keyboard.key_held.char.inspect}" }~
+** Processing line: ~~
+** Processing line: ~    args.outputs.labels << { x: 30,~
+** Processing line: ~                             y: 720 - 60,~
+** Processing line: ~                             text: "key_held.j:    #{keyboard.key_held.j}" }~
+** Processing line: ~~
+** Processing line: ~    args.outputs.labels << { x: 30,~
+** Processing line: ~                             y: 720 - 30,~
+** Processing line: ~                             text: "key_up.char:   #{keyboard.key_up.char.inspect}" }~
+** Processing line: ~~
+** Processing line: ~    args.outputs.labels << { x: 30,~
+** Processing line: ~                             y: 720 - 60,~
+** Processing line: ~                             text: "key_up.j:      #{keyboard.key_up.j}" }~
+** Processing line: ~  end~
+** Processing line: ~#end_src~

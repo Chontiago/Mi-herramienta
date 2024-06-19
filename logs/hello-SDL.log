@@ -1,0 +1,47 @@
+* 000000 [Engine] Log started at 2024/6/18 22:50:58
+* 000000 [Engine] This copy of the engine is git hash 1b17e4b7946e569cc40a2f35896efffc4c6c423a, built on Nov  2 2023, at 21:45:37
+* 000000 [Engine] Platform: Mac OS X
+* 000000 [Engine] 
+* 000000 [Engine] *******************************************************************************************
+* 000000 [Engine] *** This is the Standard license build!                                                 ***
+* 000000 [Engine] *** Get more with an Indie or Pro license such as C extensions, mobile dev, and VR dev! ***
+* 000000 [Engine] *** Details at http://dragonruby.org/toolkit/game#purchase                              ***
+* 000000 [Engine] *******************************************************************************************
+* 000000 [Engine] 
+! 000000 [Engine] Metadata file does not have all required fields!
+- 000000 [Engine] Game Dir: /Users/santiago/Desktop/d//mygame
+- 000000 [Engine] Game ID: hello-SDL
+- 000000 [Engine] Game Title: Update metadata/game_metadata.txt in your mygame directory to change this title.
+- 000000 [Engine] Game Version: 1.0
+- 000000 [Engine] Game Package ID: org.dragonruby.hello-SDL
+- 000000 [Engine] Game Developer ID: dragonruby
+- 000000 [Engine] Game Developer Title: DragonRuby LLC
+- 000000 [Engine] Production Build: no
+- 000000 [Engine] Remote Hotload: no
+? 000000 [Engine] Loading cvars from file 'metadata/cvars.txt' ...
+? 000000 [Engine] File 'metadata/cvars.txt' line 1 setting cvar 'log.filter_subsystems' to 'HTTPServer'
+? 000000 [Engine] File 'metadata/cvars.txt' complete
+- 000000 [Render] SDL video backend: cocoa
+- 000000 [Render] SDL renderer backend: metal
+- 000000 [Render] Window size: 1280x720 (requested 1280x720)
+- 000000 [Render] Fullscreen Desktop mode: no
+- 000000 [Render] Allow HighDPI: no
+- 000000 [Render] Max texture size: 16384x16384 (system reported 16384x16384)
+- 000000 [Render] Logical render size: 1280x720
+? 000000 [Engine] RNG seed has been set to 1718772658.
+- 000000 [Engine] Janitor is using 4 threads.
+- 000000 [Game] * Warning: Method invoked with block.
+The method each_with_index was invoked on app within args.state, but app has
+a value of nil.
+
+Here are the details:
+
+object:
+{:entity_id=>3, :tick_count=>0, :__thrash_count__=>{}, :app=>#<TimeManageTool:0x7fa639444270 @programar={["PROGRAMAR", 5, "-", "+", "NO"]=>[]}, @overwrite_data_flag=false, @main_button_text="NEW TASK", @main_array=[["PROGRAMAR", 5, "-", "+", "NO"], ["CAMINAR", 5, "-", "+", "YES"], ["LEER", 2, "-", "+", "NO"]], @clicked_subtask=nil, @back=false, @leer={["LEER", 3, "-", "+", "NO"]=>[]}, @reset_data=[{["PROGRAMAR", 5, "-", "+", "NO"]=>[]}, {["CAMINAR", 5, "-", "+", "YES"]=>[["SOLO", 3, "-", "+"], ["PERRO", 2, "-", "+"]]}, {["LEER", 3, "-", "+", "NO"]=>[]}], @save_file="save_data.txt", @initial_tasks=[{["PROGRAMAR", 5, "-", "+", "NO"]=>[]}, {["CAMINAR", 5, "-", "+", "YES"]=>[["SOLO", 3, "-", "+"], ["PERRO", 2, "-", "+"]]}, {["LEER", 3, "-", "+", "NO"]=>[]}], @create=false, @reset_tasks=[{["PROGRAMAR", 5, "-", "+", "NO"]=>[]}, {["CAMINAR", 5, "-", "+", "YES"]=>[["SOLO", 3, "-", "+"], ["PERRO", 2, "-", "+"]]}, {["LEER", 3, "-", "+", "NO"]=>[]}], @clicked_task=nil, @task_array=[["PROGRAMAR", 5, "-", "+", "NO"], ["CAMINAR", 5, "-", "+", "YES"], ["LEER", 2, "-", "+", "NO"]], @smash={["SMASH", 5, "-", "+", "YES"]=>[["PARTIDAS", 2, "-", "+"], ["FUNDIES", 2, "-", "+"], ["OTRAS", 1, "-", "+"]]}, @clicked_new_task=nil, @loaded_data=[{["PROGRAMAR", 5, "-", "+", "NO"]=>[]}, {["CAMINAR", 5, "-", "+", "YES"]=>[["SOLO", 3, "-", "+"], ["PERRO", 2, "-", "+"]]}, {["LEER", 2, "-", "+", "NO"]=>[]}], @caminar={["CAMINAR", 5, "-", "+", "YES"]=>[["SOLO", 3, "-", "+"], ["PERRO", 2, "-", "+"]]}, @args=#<GTK::Args:0x7fa6394a5e50>>}
+
+member: [each_with_index]
+attribute: [app].
+
+Set a default value for this property or you might get an exception later on.
+
+* 000002 [Engine] Logging shutting down
